@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace InterfaceExercise
 {
@@ -8,20 +9,20 @@ namespace InterfaceExercise
         {
             //TODO Be sure to follow BEST PRACTICES when creating classes and interfaces
 
-            //Create 2 Interfaces called IVehicle & ICompany
+            //Create 2 Interfaces called IVehicle & ICompany - Done
 
-            //Create 3 classes called Car , Truck , & SUV
+            //Create 3 classes called Car , Truck , & SUV - Done
 
             //In your IVehicle
             
-                /* Create 4 members that Car, Truck, & SUV all have in common.
-                 * Example: All vehicles have a number of wheels... for now..
+                /* Create 4 members that Car, Truck, & SUV all have in common. - done
+                 * Example: All vehicles have a number of wheels... for now.. - done
                  */
             
 
             //In ICompany
             
-                /*Create 2 members that are specific to each every company
+                /*Create 2 members that are specific to each and every company - done
                  * regardless of vehicle type.
                  *
                  *
@@ -39,6 +40,12 @@ namespace InterfaceExercise
 
             //Now, create objects of your 3 classes and give their members values;
             //Creatively display and organize their values
+
+            var vehicles = new List<IVehicle>();
+
+            var sedan1 = new Car() { Year = 2018, Make = "Honda", Model = "Accord", CorpName = "BrandX", GasMilage = 40.4, Seats = 6, HowManyDoors = 4, Tires = 4 };
+
+
         }
     }
 }
