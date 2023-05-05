@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    public class SUV : IVehicle
+    public class SUV : IVehicle, ICompany
     {
+        public SUV()
+        {
+            
+        }
+        public bool FOurWheelDrive { get; set; }
         public int Tires { get ; set ; }
         public int HowManyDoors { get ; set ; }
         public int Seats { get ; set ; }
@@ -15,5 +20,7 @@ namespace InterfaceExercise
         public double Year { get ; set ; }
         public string Make { get; set; }
         public string Model { get; set; }
+        public string CorpName { get; set; }
+        public bool Bankrupt { get; set; }
     }
 }

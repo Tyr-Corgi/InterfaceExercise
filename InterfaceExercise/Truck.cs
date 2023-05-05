@@ -8,6 +8,10 @@ namespace InterfaceExercise
 {
     public class Truck : IVehicle, ICompany
     {
+        public Truck()
+        {
+            
+        }
         public int Tires { get; set; }
         public int HowManyDoors { get; set; }
         public int Seats { get; set; }
